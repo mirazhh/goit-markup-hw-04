@@ -162,11 +162,21 @@ img, p, b {
 
 .hero-section {
     /*background-color: var(--darker-background-color);*/
-    background-image: url(../images/Header/Header-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../images/Header/Header-img.jpg);
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.8)
+        ), url(../images/Header/Header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-section-title {
@@ -399,11 +409,32 @@ img, p, b {
     margin-right: 10px;
 }
 
-/*.social-network-link {
-    padding-top: 16px;
-    padding-bottom: 24px;
-   
-}*/
+.social-network-link {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.instagram-network-logo-link {
+    background-image: url(../images/Logos.svg/instagram-1.svg);
+}
+
+.twitter-network-logo-link {
+    background-image: url(../images/Logos.svg/twitter-2.svg);
+}
+
+.facebook-network-logo-link {
+    background-image: url(../images/Logos.svg/facebook-3.svg);
+}
+
+.linkedin-network-logo-link {
+    background-image: url(../images/Logos.svg/linkedin-4.svg);
+}
+
+.social-network-link:hover {
+    background-color: var(--accent-blue-color);
+}
 
 /*Constant clients section*/
 
