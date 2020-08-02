@@ -1,6 +1,7 @@
 /*Common styles*/
 
-/* Raleway bold 700
+/* Fonts
+   Raleway bold 700
    Roboto Regular 400
    Roboto Medium 500
    Roboto Bold 700
@@ -157,27 +158,61 @@ img, p, b {
     color: var(--accent-blue-color); /*#2196F3*/
 }
 
+.contacts-menu-item-mailto {
+    display: block;
+}
+
+.contacts-menu {
+    align-items: center;
+}
+
+.icon-envelope-svg {
+    width: 16px;
+    height: 11px;
+    fill: var(--social-links-svg-main-color);
+    margin-right: 10px;
+}
+
+.icon-envelope-svg:hover {
+    fill: var(--accent-blue-color);
+}
+
+.contacts-menu-item-tel {
+    display: block;
+}
+
+.icon-smartphone-svg {
+    width: 10px;
+    height: 15px;
+    fill: var(--social-links-svg-main-color); 
+    margin-right: 10px;
+}
+
+.icon-smartphone-svg:hover {
+    fill: var(--accent-blue-color);
+}
+
+
 /*Index.html Studio css*/
 
 /*Hero section*/
 
-.hero-section {
-    /*background-color: var(--darker-background-color);*/
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: url(../images/Header/Header-img.jpg);
-}
-
-.overlay {
+.hero-section-overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
-        to right, rgba(47, 48, 58, 0.8)
-        ), url(../images/Header/Header-img.jpg);
+        rgba(47, 48, 58, 0.8)
+        ),
+        url(../images/Hero/Hero.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
+}
+
+.hero-section-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-section-title {
@@ -354,6 +389,11 @@ img, p, b {
 
 .our-team-member:not(:last-child) {
     margin-right: 30px;
+}
+
+.our-team-member {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-member-photo {
@@ -575,6 +615,10 @@ img, p, b {
 
 .our-projects-item:not(:nth-child(n+7)) {
     margin-bottom: 30px;
+}
+
+.our-projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .our-projects-information {
