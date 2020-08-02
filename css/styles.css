@@ -28,6 +28,7 @@
     --lightest-background-color: #FFFFFF;
     --darker-background-color: #F5F4FA;
     --background-footer-color: #2F303A;
+    --social-links-svg-main-color: #afb1b8;
 
 }
 
@@ -261,6 +262,11 @@ img, p, b {
     margin-bottom: 10px;
 }
 
+.our-strengths-section-svg {
+    width: 70px;
+    height: 70px;
+}
+
 .our-strengths-item-title {
    font-weight: 700;/*bold*/
    font-size: 14px;
@@ -416,20 +422,14 @@ img, p, b {
     border-radius: 50%;
 }
 
-.instagram-network-logo-link {
-    background-image: url(../images/Logos.svg/instagram-1.svg);
+.social-network-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-links-svg-main-color);
 }
 
-.twitter-network-logo-link {
-    background-image: url(../images/Logos.svg/twitter-2.svg);
-}
-
-.facebook-network-logo-link {
-    background-image: url(../images/Logos.svg/facebook-3.svg);
-}
-
-.linkedin-network-logo-link {
-    background-image: url(../images/Logos.svg/linkedin-4.svg);
+.social-network-link-svg:hover {
+    fill: var(--dark-theme-text-color)
 }
 
 .social-network-link:hover {
@@ -467,6 +467,45 @@ img, p, b {
 .constant-clients-section-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.constant-clients-section-logo .logo-1 {
+    width: 44px;
+    height: 49px;
+}
+
+.constant-clients-section-logo .logo-2 {
+    width: 40px;
+    height: 52px;
+}
+
+.constant-clients-section-logo .logo-3 {
+    width: 41px;
+    height: 43px;
+}
+
+.constant-clients-section-logo .logo-4 {
+    width: 80px;
+    height: 42px;
+}
+
+.constant-clients-section-logo .logo-5 {
+    width: 59px;
+    height: 47px;
+}
+
+.constant-clients-section-logo .logo-6 {
+    width: 88px;
+    height: 45px;
+}
+
+.contant-clients-section-svg {
+  fill: var(--social-links-svg-main-color);
+}
+
+.contant-clients-section-svg:hover {
+    fill: var(--accent-blue-color);
+  }
+
 
 /*Portfolio css*/
 
