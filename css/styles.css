@@ -192,7 +192,8 @@ img, p, b {
     margin-right: 10px;
 }
 
-.contacts-menu-item-link:hover svg{
+.contacts-menu-item-link:hover svg,
+.contacts-menu-item-link:focus svg {
     fill: var(--accent-blue-color);
 }
 
@@ -469,11 +470,13 @@ img, p, b {
     fill: var(--social-links-svg-main-color);
 }
 
-.social-network-link-logo:hover svg{
+.social-network-link-logo:hover svg,
+.social-network-link-logo:focus svg{
     fill: var(--dark-theme-text-color)
 }
 
-.social-network-link-logo:hover {
+.social-network-link-logo:hover,
+.social-network-link-logo:focus {
     background-color: var(--accent-blue-color);
 }
 
@@ -543,7 +546,8 @@ img, p, b {
   fill: var(--social-links-svg-main-color);
 }
 
-.constant-clients-section-logo:hover svg{
+.constant-clients-section-logo:hover svg,
+.constant-clients-section-logo:focus svg{
     fill: var(--accent-blue-color);
 }
 
@@ -617,10 +621,7 @@ img, p, b {
     margin-bottom: 30px;
 }
 
-.our-projects-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
+.our-projects-item:hover,
 .our-projects-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
