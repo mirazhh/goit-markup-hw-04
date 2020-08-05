@@ -134,14 +134,22 @@ img, p, b {
     color: var(--dark-grey-text-color) /*#212121*/;
 }
 
-.web-studio-item-link,
+web-studio-item-link,
+.contacts-menu-item-link,
 .contacts-menu-item-link {
-    font-weight: 500;
     font-style: normal;/*deletes automatic italic of link*/
+}
+
+.web-studio-item-link,
+.mailto-text .contacts-menu-item-link 
+.tel-number .contacts-menu-item-link {
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0,02em;
 }
+
+
 
 .contacts-menu-item-link {
     color: var(--light-grey-text-color) /*#757575*/;
@@ -173,10 +181,6 @@ img, p, b {
     margin-right: 10px;
 }
 
-.icon-envelope-svg:hover {
-    fill: var(--accent-blue-color);
-}
-
 .contacts-menu-item-tel {
     display: block;
 }
@@ -188,7 +192,7 @@ img, p, b {
     margin-right: 10px;
 }
 
-.icon-smartphone-svg:hover {
+.contacts-menu-item-link:hover svg{
     fill: var(--accent-blue-color);
 }
 
@@ -448,17 +452,15 @@ img, p, b {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.social-network-link:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-network-link {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+}
+
+.social-network-link:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-network-link-svg {
@@ -467,11 +469,11 @@ img, p, b {
     fill: var(--social-links-svg-main-color);
 }
 
-.social-network-link-svg:hover {
+.social-network-link-logo:hover svg{
     fill: var(--dark-theme-text-color)
 }
 
-.social-network-link:hover {
+.social-network-link-logo:hover {
     background-color: var(--accent-blue-color);
 }
 
@@ -541,10 +543,9 @@ img, p, b {
   fill: var(--social-links-svg-main-color);
 }
 
-.contant-clients-section-svg:hover {
+.constant-clients-section-logo:hover svg{
     fill: var(--accent-blue-color);
-  }
-
+}
 
 /*Portfolio css*/
 
@@ -619,6 +620,11 @@ img, p, b {
 .our-projects-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.our-projects-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .our-projects-information {
     padding-top: 20px;
