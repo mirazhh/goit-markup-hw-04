@@ -134,15 +134,15 @@ img, p, b {
     color: var(--dark-grey-text-color) /*#212121*/;
 }
 
-web-studio-item-link,
+.web-studio-item-link,
 .contacts-menu-item-link,
 .contacts-menu-item-link {
     font-style: normal;/*deletes automatic italic of link*/
 }
 
 .web-studio-item-link,
-.mailto-text .contacts-menu-item-link 
-.tel-number .contacts-menu-item-link {
+.mailto-text  
+.tel-number {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
