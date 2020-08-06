@@ -142,13 +142,12 @@ img, p, b {
 }
 
 .web-studio-item-link,
-.contacts-menu-item-link .mailto-text,  
-.contacts-menu-item-link .tel-number {
+.mailto-text,  
+.tel-number {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0,02em;
 }
-
 
 .contacts-menu-item-link {
     color: var(--light-grey-text-color) /*#757575*/;
