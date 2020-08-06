@@ -138,17 +138,16 @@ img, p, b {
 .contacts-menu-item-link,
 .contacts-menu-item-link {
     font-style: normal;/*deletes automatic italic of link*/
+    font-weight: 500;
 }
 
 .web-studio-item-link,
-.mailto-text  
-.tel-number {
-    font-weight: 500;
+.contacts-menu-item-link .mailto-text,  
+.contacts-menu-item-link .tel-number {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.143;
     letter-spacing: 0,02em;
 }
-
 
 
 .contacts-menu-item-link {
@@ -192,7 +191,10 @@ img, p, b {
     margin-right: 10px;
 }
 
-.contacts-menu-item-link:hover svg,
+.contacts-menu-item-link:hover svg {
+    fill: var(--accent-blue-color);
+}
+
 .contacts-menu-item-link:focus svg {
     fill: var(--accent-blue-color);
 }
@@ -542,11 +544,22 @@ img, p, b {
     height: 45px;
 }
 
-.contant-clients-section-svg {
+.constant-clients-section-logo:hover {
+    border: 1px solid var(--accent-blue-color);
+}
+
+.constant-clients-section-logo:focus {
+    border: 1px solid var(--accent-blue-color);
+}
+
+.constant-clients-section-svg {
   fill: var(--social-links-svg-main-color);
 }
 
-.constant-clients-section-logo:hover svg,
+.constant-clients-section-logo:hover svg{
+    fill: var(--accent-blue-color);
+}
+
 .constant-clients-section-logo:focus svg{
     fill: var(--accent-blue-color);
 }
@@ -621,7 +634,11 @@ img, p, b {
     margin-bottom: 30px;
 }
 
-.our-projects-item:hover,
+.our-projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .our-projects-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
